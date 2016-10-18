@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SistemasArchivosAndroid</string>
+    <string name="optAlmatxt">Interna</string>
+    <string name="optAlmaExttxt">Save External</string>
+    <string name="txtTextoTexto">Write the text</string>
+    <string name="btnSaveText">Save</string>
+    <string name="btnClearText">Open File</string>
+</resources>
