@@ -53,7 +53,10 @@ implements View.OnClickListener{
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(checkedId == R.id.optExterna){
-
+                    checkPermissionExternalStorage(MainActivity.this);
+                    for(String item :  Environment.getExternalStorageDirectory().list()){
+                        Log.d("ARCHIVO-EXTERNO-CONTEXT", item );
+                    }
                 }
             }
         });
@@ -63,7 +66,9 @@ implements View.OnClickListener{
     private void saveInternal(){
         try {
             FileOutputStream fileOutputStream = openFileOutput("mi-archivo-interno.txt", MODE_APPEND);
+
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
+
             outputStreamWriter.write(txt.getText().toString());
             outputStreamWriter.flush();
             outputStreamWriter.close();
