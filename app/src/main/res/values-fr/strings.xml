@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SistemasArchivosAndroid</string>
+    <string name="optAlmaInterno">Memorie Internee</string>
+    <string name="optAlmaExterno">Memorie Externeel</string>
+    <string name="txtTextoTexto">Escribi le text</string>
+    <string name="btnSaveText">LeGuardie</string>
+    <string name="btnClearText">LeAbrie</string>
+</resources>
